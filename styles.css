@@ -159,3 +159,20 @@ p {
     display:flex;
     justify-content: space-around;
 }
+
+
+@media only screen and (max-width:828px) {
+    #main_photo {
+        margin:10px 0 0 0;
+    }
+    .social_networks {
+        margin:10px 0 0 0;
+    }
+    .description {
+        margin:0 10px;
+    }
+    .social_networks_big {
+        width:250px;
+        height:250px;
+    }
+}
