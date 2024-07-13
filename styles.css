@@ -1,0 +1,161 @@
+@font-face {
+    src: url(Exton\ Free\ Trial.ttf);
+    font-family: Font;
+}
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-weight:800;
+    font-family: Font;
+    background:linear-gradient(#000, #797777);
+}
+
+#navbar .container {
+    display:flex;
+    justify-content:center;
+}
+
+#navbar li {
+    display:inline;
+    margin:0 10px;
+}
+
+#navbar a {
+    color:aliceblue;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left:3.5px;
+    font-size: 30px;
+}
+
+#navbar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.main_menu {
+    margin-top:20px;
+}
+
+.social_networks {
+    margin-top:10px;
+    margin-left:60px;
+}
+
+.social_networks_big {
+    width:300px;
+    height:300px;
+    border-radius:75px;
+}
+
+.greeting {
+    margin-top: 150px;
+}
+
+.main_button {
+    background:rgb(235, 231, 231);
+    text-decoration:none;
+    color:black;
+    font-size:25px;
+    padding:10px 20px;
+    border-radius:15px;
+}
+
+.main_button:hover {
+    font-size:30px;
+    transition-duration:0.75s;
+    background-color: rgb(230, 149, 43);
+}
+
+.button {
+    display:flex;
+    justify-content:center;
+    margin-top:150px;
+}
+
+.copyright {
+    font-size:16px;
+    margin:500px 0 20px 0;
+}
+
+p {
+    text-align:center;
+    font-size:150px;
+    color:aliceblue;
+    font-family: "Lucida Console", 'Courier New', Courier, monospace;
+}
+
+#navbar a:hover {
+    font-size:40px;
+    transition-duration:1s;
+    color:#fff;
+}
+
+#main_photo {
+    margin:10px 100px 0 0;
+    border:2px solid #fff;
+}
+
+.logo_photo {
+    border: 2px solid #fff;
+}
+
+.description {
+    font-size:30px;
+    margin:40px 500px 0 500px;
+    border:3px solid #fff;
+    border-radius:20px;
+    padding:20px;
+}
+
+.headline {
+    font-size:40px;
+    margin-top:40px;
+}
+
+.company {
+    width:150px;
+    height:150px;
+    border-radius:20px;
+    display: block;
+    margin:50px auto;
+}
+
+.achievements {
+    font-size:30px;
+    margin-top:70px;
+}
+
+.img1 {
+    width: 300px;
+    height: 300px;
+    border-radius: 100px;
+    display:block;
+    margin:20px auto;
+    border:3px solid #fff;
+}
+
+.certificate {
+    width:500px;
+    height:300px;
+    display:block;
+    margin:50px auto 15px auto;
+    border:3px solid #000;
+}
+
+.contact {
+    font-size:40px;
+    margin-top:75px;
+}
+
+.contact_center {
+    margin-top:150px;
+    display:flex;
+    justify-content: space-around;
+}
