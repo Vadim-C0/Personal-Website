@@ -1,83 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Personal website" />
-    <meta name="author" content="Vadim" />
-    <meta name="keywords" content="Home, About, Achievements" />
-    <title>My website</title>
+    <meta name="description" content="Contact Vadim" />
+    <title>Vadim Portfolio | Contact</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="shortcut icon" href="images/my_photo.jpg" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/icon.jpg" type="image/jpg" />
   </head>
   <body>
     <header>
-      <nav id="navbar">
-        <div class="container">
-          <div class="brand">
-            <a href="./">
-              <img
-                id="main_photo"
-                src="images/my_photo.jpg"
-                alt="Vadim is standing with a building background and smiling"
-              />
-            </a>
+      <nav class="navbar">
+        <div class="container nav-container">
+          <a href="index.html" class="brand">
+            <img src="images/my_photo.jpg" alt="Vadim smiling" class="logo" />
+          </a>
+
+          <!-- Hamburger button -->
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
-          <div class="main_menu">
-            <ul>
-              <li><a href="./">Home</a></li>
-              <li><a href="./about">About</a></li>
-              <li><a href="./achievements">Achievements</a></li>
-              <li><a href="./contact">Contact</a></li>
-            </ul>
-          </div>
-          <div class="social_networks">
-            <a
-              href="https://www.linkedin.com/in/vadim-gladyshev-591103298/"
-              target="_blank"
-              ><img class="logo_photo" src="images/linkedin_photo.webp"
-            /></a>
-            <a href="https://x.com/Vadim1547371" target="_blank"
-              ><img class="logo_photo" src="images/twitter_photo.webp"
-            /></a>
-            <a href="https://www.instagram.com/vadim135791/" target="_blank"
-              ><img class="logo_photo" src="images/instagram_photo.png"
-            /></a>
-          </div>
+
+          <ul class="nav-menu" id="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
         </div>
       </nav>
     </header>
-    <main>
-      <section>
-        <p class="contact">Let's Connect!</p>
-        <div class="contact_center">
-            <a
+
+    <section class="contact-section" data-aos="fade-up">
+      <div class="container">
+        <h2 data-aos="fade-right">Let's Connect!</h2>
+        <div class="social-links" data-aos="fade-up">
+          <a
             href="https://www.linkedin.com/in/vadim-gladyshev-591103298/"
-            target="_blank">
-            <img
-            class="social_networks_big"
-            src="images/linkedin_photo.webp"
-            alt="LinkedIn photo"
-            />
-            </a>
-            <a href="https://x.com/Vadim1547371" target="_blank">
-            <img
-            class="social_networks_big"
-            src="images/twitter_photo.webp"
-            alt="Twitter photo"
-            />
-            </a>
-            <a href="https://www.instagram.com/vadim135791/" target="_blank">
-            <img
-            class="social_networks_big"
-            src="images/instagram_photo.png"
-            alt="Instagram photo"
-            />
-            </a>
+            target="_blank"
+            data-aos="fade-up"
+          >
+            <img src="images/linkedin_photo.webp" alt="LinkedIn" />
+          </a>
+          <a
+            href="https://x.com/Vadim1547371"
+            target="_blank"
+            data-aos="fade-up"
+          >
+            <img src="images/twitter_photo.webp" alt="Twitter" />
+          </a>
+          <a
+            href="https://www.instagram.com/vadim135791/"
+            target="_blank"
+            data-aos="fade-up"
+          >
+            <img src="images/instagram_photo.png" alt="Instagram" />
+          </a>
         </div>
-    </main>
+      </div>
+    </section>
+
     <footer>
-      <p class="copyright">Copyright &copy; 2024</p>
+      <div class="container footer-container">
+        <p>&copy; 2025 Vadim. All rights reserved.</p>
+      </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
