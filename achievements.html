@@ -1,87 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Personal website" />
-    <meta name="author" content="Vadim" />
-    <meta name="keywords" content="Home, About, Achievements" />
-    <title>My website</title>
+    <meta name="description" content="Vadim's Achievements" />
+    <title>Vadim Portfolio | Achievements</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="shortcut icon" href="images/my_photo.jpg" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/icon.jpg" type="image/jpg" />
   </head>
   <body>
     <header>
-      <nav id="navbar">
-        <div class="container">
-          <div class="brand">
-            <a href="./">
-              <img
-                id="main_photo"
-                src="images/my_photo.jpg"
-                alt="Vadim is standing with a building background and smiling"
-              />
-            </a>
+      <nav class="navbar">
+        <div class="container nav-container">
+          <a href="index.html" class="brand">
+            <img
+              src="images/my_photo.jpg"
+              alt="Vadim smiling"
+              class="logo"
+              data-aos="fade-up"
+            />
+          </a>
+
+          <!-- Hamburger button -->
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
-          <div class="main_menu">
-            <ul>
-              <li><a href="./">Home</a></li>
-              <li><a href="./about">About</a></li>
-              <li><a href="./achievements">Achievements</a></li>
-              <li><a href="./contact">Contact</a></li>
-            </ul>
-          </div>
-          <div class="social_networks">
-            <a
-              href="https://www.linkedin.com/in/vadim-gladyshev-591103298/"
-              target="_blank"
-              ><img class="logo_photo" src="images/linkedin_photo.webp"
-            /></a>
-            <a href="https://x.com/Vadim1547371" target="_blank"
-              ><img class="logo_photo" src="images/twitter_photo.webp"
-            /></a>
-            <a href="https://www.instagram.com/vadim135791/" target="_blank"
-              ><img class="logo_photo" src="images/instagram_photo.png"
-            /></a>
-          </div>
+
+          <ul class="nav-menu" id="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="achievements.html" class="active">Achievements</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
       </nav>
     </header>
-    <main>
-      <section>
-        <p class="achievements">1.Sport tournaments</p>
-        <img
-          class="img1"
-          src="images/soccertennis.jpg"
-          alt="One soccer ball and two tennis balls are lying on the grass"
-        />
-        <p class="achievements">2.Math olympiads</p>
-        <img
-          class="img1"
-          src="images/math.jpg"
-          alt="Several math equations are next to each other"
-        />
-        <p class="achievements">
-          3.Certificates:<br /><br />Introduction to AI Certificate<a
+
+    <section class="achievements-section" data-aos="fade-up">
+      <div class="container">
+        <h2>Achievements</h2>
+
+        <div class="achievement-card">
+          <h3 data-aos="fade-right">Sport Tournaments</h3>
+          <img
+            src="images/soccertennis.jpg"
+            alt="Soccer and tennis balls"
+            data-aos="zoom-in"
+          />
+        </div>
+
+        <div class="achievement-card">
+          <h3 data-aos="fade-right">Math Olympiads</h3>
+          <img src="images/math.jpg" alt="Math equations" data-aos="zoom-in" />
+        </div>
+
+        <div class="achievement-card">
+          <h3 data-aos="fade-right">Certificates</h3>
+          <p>Introduction to AI Certificate</p>
+          <a
             href="https://www.coursera.org/account/accomplishments/specialization/SN33P3KA2LQQ"
             target="_blank"
-            ><img
-              class="certificate"
+          >
+            <img
               src="images/AI_certificate.png"
-              alt="AI_certificate" /></a
-          ><br /><br />Portfolio and Risk Management Certificate<a
+              alt="AI Certificate"
+              data-aos="zoom-in"
+            />
+          </a>
+          <p>Portfolio & Risk Management Certificate</p>
+          <a
             href="https://www.coursera.org/account/accomplishments/verify/SJYSRNTX7TB8"
             target="_blank"
-            ><img
-              class="certificate"
+          >
+            <img
               src="images/Portfolio_certificate.png"
-              alt="portfolio management certificate"
-          /></a>
-        </p>
-      </section>
-    </main>
+              alt="Portfolio Certificate"
+              data-aos="zoom-in"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+
     <footer>
-      <p class="copyright">Copyright &copy; 2024</p>
+      <div class="container footer-container">
+        <p>&copy; 2025 Vadim. All rights reserved.</p>
+      </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
