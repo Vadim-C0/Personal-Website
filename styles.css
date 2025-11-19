@@ -136,6 +136,10 @@ section {
   text-align: justify;
 }
 
+.about-section h3 {
+  margin-top: 50px;
+}
+
 .companies {
   display: flex;
   justify-content: center;
